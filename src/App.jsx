@@ -1,10 +1,14 @@
 import React from 'react'
-
+import Header from './components/Header/Header'
+import { Outlet } from 'react-router-dom'
 const App = () => {
   return (
-    <div className='text-green-600'>
-      Harshit
-    </div>
+    <>
+      <Header />
+      <main className="flex w-full fixed gap-[1rem] top-[68px]">
+        <Outlet/>
+      </main>
+    </>
   )
 }
 
